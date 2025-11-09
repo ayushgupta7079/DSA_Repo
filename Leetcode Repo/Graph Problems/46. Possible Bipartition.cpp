@@ -2,6 +2,7 @@
 886. Possible Bipartition
 http://leetcode.com/problems/possible-bipartition/description/
 */
+
 class Solution
 {
 public:

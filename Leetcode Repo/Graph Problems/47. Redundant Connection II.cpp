@@ -113,12 +113,16 @@ public:
 Implemented this logic and find out someone posted same logic. So adding this here to revise if I forgot the logic
 
 -----------------------------------------------------------------------------------------------------------
-Assume you had a directed tree. Then let's look at the number of incoming edges to a vertex. Root has 0 incoming, all remaining has 1 incoming edge. So, we have an array of incoming edges looking as following [0, 1, 1, 1, ... 1].
+Assume you had a directed tree. Then let's look at the number of incoming edges to a vertex. Root has 0 incoming,
+all remaining has 1 incoming edge. So, we have an array of incoming edges looking as following [0, 1, 1, 1, ... 1].
 
 What happens when we add extra directed edge to a graph. Our array can become one of following types:
 [0, 2, 1, 1, ... 1] and [1, 1, 1, 1, ... 1].
 
-In first case, we got vertex with two incoming edges. It becomes clear to which vertex new edge has been added, and since it has only two incoming edges it is possible in linear time to check whether we can delete each of them.
+In first case, we got vertex with two incoming edges. It becomes clear to which vertex new edge has been
+added, and since it has only two incoming edges it is possible in linear time to check whether we can delete
+each of them.
 
-In second case, it is possible to prove that there is a cycle, and that all edges connected to that cycle are outcoming. Thus, we can remove any edge from this cycle.
+In second case, it is possible to prove that there is a cycle, and that all edges connected to
+that cycle are outcoming. Thus, we can remove any edge from this cycle.
 */
