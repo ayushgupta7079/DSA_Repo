@@ -21,6 +21,7 @@ int rec(int ind, int rw)
 
   // take current item again (unbounded)
   int take = rec(ind, rw - w[ind]) + p[ind];
+
   // skip and move left
   int notTake = rec(ind - 1, rw);
 
