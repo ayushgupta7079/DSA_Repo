@@ -37,7 +37,7 @@
 37            }
 38            else{
 39                mps[s[tail]]--;
-40                if(mps[s[tail]] < mpt[s[tail]]) count--;
+40                if(mpt.count(s[tail]) && mps[s[tail]] < mpt[s[tail]]) count--;
 41                tail++;
 42            }
 43        }
