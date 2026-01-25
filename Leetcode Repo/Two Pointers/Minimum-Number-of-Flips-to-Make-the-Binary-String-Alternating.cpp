@@ -23,20 +23,21 @@
 23
 24            if(head >= n){
 25                int tail = head-n;
-26                if(tail%2==0){
-27                    if(ch =='0') diff2--;
-28                    else diff1--;
-29                }
-30                else{
-31                    if(ch =='0') diff1--;
-32                    else diff2--;
-33                }
-34            }
-35            if(head >= n-1){
-36                ans = min({ans, diff1, diff2});
-37            }
-38        }
-39
-40        return ans;
-41    }
-42};
+26                char rem=t[tail];
+27                if(tail%2==0){
+28                    if(rem =='0') diff2--;
+29                    else diff1--;
+30                }
+31                else{
+32                    if(rem =='0') diff1--;
+33                    else diff2--;
+34                }
+35            }
+36            if(head >= n-1){
+37                ans = min({ans, diff1, diff2});
+38            }
+39        }
+40
+41        return ans;
+42    }
+43};
