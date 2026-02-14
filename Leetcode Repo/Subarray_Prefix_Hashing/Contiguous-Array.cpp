@@ -12,10 +12,9 @@
 12            if(mp.find(prefSum) != mp.end()){
 13                ans = max(ans, i - mp[prefSum]);
 14            }
-15
-16            if(mp.find(prefSum) == mp.end())mp[prefSum]=i;
-17        }
-18
-19        return ans;
-20    }
-21};
+15            else mp[prefSum]=i;
+16        }
+17
+18        return ans;
+19    }
+20};
