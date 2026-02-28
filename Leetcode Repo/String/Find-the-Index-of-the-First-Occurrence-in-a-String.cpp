@@ -15,11 +15,8 @@
 15            i++;
 16            j++;
 17            lps[i] = j;
-18        }
-19
-20        for(int i=1;i<=n;i++){
-21            if(lps[i] == m) return i-2*m-1;
-22        }
-23        return -1;
-24    }
-25};
+18            if(lps[i] == m) return i-2*m-1;
+19        }
+20        return -1;
+21    }
+22};
